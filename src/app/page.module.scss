@@ -1,0 +1,21 @@
+$black: #232323;
+$white: #fff;
+
+.wrapper {
+  width: calc(100vw - 100px);
+  margin: 50px auto;
+  border-radius: 10px;
+  max-width: 1400px;
+  @media screen and (max-width: 590px) {
+    width: calc(100vw - 50px);
+  }
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  border: 2px outset;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 40px;
+}

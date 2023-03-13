@@ -1,0 +1,59 @@
+.container {
+  position: relative;
+  padding: 5px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px outset;
+}
+
+.formInput {
+  width: 100%;
+  padding: 15px 50px;
+  border: none;
+  font-size: 20px;
+
+  &:focus,
+  :active,
+  :hover {
+    outline: 0;
+    outline-offset: 0;
+  }
+  @media screen and (max-width: 590px) {
+    width: 100%;
+  }
+}
+
+.button {
+  padding: 15px 30px;
+  border: none;
+  background-color: #b50f5d;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  &:hover:enabled {
+    transform: translateY(-1px);
+    background-color: #bc0e5f;
+  }
+  &:active:enabled {
+    transform: translateY(1px);
+    background-color: #98094c;
+  }
+  &:disabled {
+    background-color: #713c55;
+    cursor: initial;
+    opacity: 0.6;
+  }
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  opacity: 0.5;
+}
